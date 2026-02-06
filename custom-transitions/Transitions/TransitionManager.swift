@@ -116,6 +116,7 @@ private extension TransitionManager {
         }
 
         animator.addCompletion { position in
+            print(position)
             toViewController.view.isHidden = false
             snapshotAlbumCoverImageView.removeFromSuperview()
             snapshotContentView.removeFromSuperview()
